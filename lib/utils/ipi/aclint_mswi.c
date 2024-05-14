@@ -15,6 +15,7 @@
 #include <sbi/sbi_ipi.h>
 #include <sbi/sbi_scratch.h>
 #include <sbi/sbi_timer.h>
+#include <sbi/sbi_platform.h>
 #include <sbi_utils/ipi/aclint_mswi.h>
 
 static unsigned long mswi_ptr_offset;
