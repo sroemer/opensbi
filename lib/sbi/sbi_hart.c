@@ -935,6 +935,10 @@ __pmp_skip:
 	if (hfeatures->mhpm_mask)
 		__sbi_hart_update_extension(hfeatures,
 					SBI_HART_EXT_ZIHPM, true);
+	
+	/* Spacemit K1 Hack */
+	__sbi_hart_update_extension(hfeatures,
+				    SBI_HART_EXT_ZICBOZ, true);
 
 	/* Mark hart feature detection done */
 	hfeatures->detected = true;
