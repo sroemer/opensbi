@@ -379,7 +379,7 @@ static void __noreturn init_coldboot(struct sbi_scratch *scratch, u32 hartid)
 	count = sbi_scratch_offset_ptr(scratch, init_count_offset);
 	(*count)++;
 
-	sbi_hsm_hart_start_finish(scratch, hartid);
+	sbi_hsm_hart_start_finish(scratch, hartid, true);
 }
 
 static void __noreturn init_warm_startup(struct sbi_scratch *scratch,
@@ -455,7 +455,7 @@ static void __noreturn init_warm_startup(struct sbi_scratch *scratch,
 	count = sbi_scratch_offset_ptr(scratch, init_count_offset);
 	(*count)++;
 
-	sbi_hsm_hart_start_finish(scratch, hartid);
+	sbi_hsm_hart_start_finish(scratch, hartid, false);
 }
 
 static void __noreturn init_warm_resume(struct sbi_scratch *scratch,

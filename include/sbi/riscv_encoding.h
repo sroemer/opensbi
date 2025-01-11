@@ -769,6 +769,9 @@
 #define CSR_VTYPE			0xc21
 #define CSR_VLENB			0xc22
 
+#define CSR_TCMCFG			0x5DB
+#define CSR_FEATURECTL			0xbf9
+
 /* ===== Trap/Exception Causes ===== */
 
 #define CAUSE_MISALIGNED_FETCH		0x0

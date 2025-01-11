@@ -15,6 +15,7 @@
 #include <sbi/sbi_error.h>
 #include <sbi/sbi_scratch.h>
 #include <sbi/sbi_timer.h>
+#include <sbi/sbi_platform.h>
 #include <sbi_utils/timer/aclint_mtimer.h>
 
 static unsigned long mtimer_ptr_offset;
